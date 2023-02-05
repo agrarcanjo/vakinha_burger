@@ -30,6 +30,8 @@ class TextStyles {
 
   // Prototype - copia o atributo alterando uma propriedade
   TextStyle get textButtonLabel => textBold.copyWith(fontSize: 14);
+
+  TextStyle get textTitle => textExtraBold.copyWith(fontSize: 28);
 }
 
 //Cria um alias para capturar a instancia de TextStyles
