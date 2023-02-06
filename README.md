@@ -20,3 +20,11 @@ start json server
 ```
 json_rest_server run
 ```
+
+
+Para rodar o match
+
+```
+flutter pub run build_runner watch -d
+
+```
