@@ -21,7 +21,8 @@ class LoginController extends Cubit<LoginState> {
     } on UnauthorizedExceptions catch (e, s) {
       log('Login e senha inválidos', error: e, stackTrace: s);
       emit(state.copyWith(
-          status: LoginStatus.loginError, errorMessage: 'Login ou senha'));
+          status: LoginStatus.loginError,
+          errorMessage: 'Login ou senha inválidos'));
     } catch (e, s) {
       log('Erro ao realizar o login', error: e, stackTrace: s);
       emit(state.copyWith(
